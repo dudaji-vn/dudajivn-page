@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/x-icon" href="./Img/dudaji-favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -625,14 +627,14 @@
 						/>
 					</div>
 					<div class="flex-1">
-						<label class="block mb-2" for="client-company-name"
+						<label class="block mb-2" for="company-name"
 							>Your company name</label
 						>
 						<input
 							required
 							type="text"
-							name="client-company-name"
-							id="client-company-name"
+							name="company-name"
+							id="company-name"
 							class="py-2 px-3 border border-[#f2f2f2] rounded-xl w-full"
 							placeholder="Enter your company name"
 						/>
@@ -897,40 +899,33 @@
 				if (textArray.length) setTimeout(type, newTextDelay + 250);
 			});
 
-			const GGFORM_URL =
-				'https://docs.google.com/forms/d/e/1FAIpQLSeC1XuoF9alL4ZatDBpPFiN8qY6snZ_XPQ8wCXHuia9tNupcA/formResponse';
-			let formContact = document.getElementById('contactForm');
+		const GOOGLE_SHEET_SCRIPT_URL =
+				'https://script.google.com/macros/s/AKfycbyaaCk2T5X1VQVBZb6XLCh-CCXdap7TVOy2VYJ4qXZt7i00c5K8Wr3a4ufJkv_sJXnDBg/exec';
+			const formContact = document.forms['contactForm']
 			formContact.addEventListener('submit', (e) => {
 				e.preventDefault();
-				let name = document.getElementById('client-name')?.value;
-				let phone = document.getElementById('client-phone')?.value;
-				let mail = document.getElementById('client-mail')?.value;
-				let company = document.getElementById(
-					'client-company-name',
-				)?.value;
-				let subject = document.getElementById('subject')?.value;
-				let message = document.getElementById('message')?.value;
-				let data = {
-					'entry.649196020': name,
-					'entry.899649716': phone,
-					'entry.95397061': mail,
-					'entry.899649716': company,
-					'entry.779819645': subject,
-					'entry.1212810950': message,
-				};
-				submitToGGform(data);
+				submitToGGform(formContact);
 			});
-			async function submitToGGform(data) {
-				console.log(data);
-				let respond = await fetch(GGFORM_URL, {
-					headers: {
-						'Content-Type': 'text/xml; charset=utf-8',
-					},
+			async function submitToGGform(formData) {
+				let respond = await fetch(GOOGLE_SHEET_SCRIPT_URL, {
 					method: 'POST',
-					body: JSON.stringify(data),
+					body: new FormData(formData),
 				});
-				console.log(respond);
+				Toastify({
+					text: "Thank you for filling out the form, we will contact you soon.",
+					duration: 3000,
+					close: true,
+					gravity: "top", 
+					position: "center", 
+					stopOnFocus: true, 
+					style: {
+						background: "linear-gradient(to right, #00b09b, #96c93d)",
+					},
+					onClick: function () { } // Callback after click
+				}).showToast();
+				
 			}
+			
 		</script>
 
 		<!-- <script src="https://test.middo.app/chat-widget.js"></script>
