@@ -1,0 +1,151 @@
+/* html {
+  scroll-behavior: smooth;
+} */
+
+.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+  min-height: 72px;
+}
+
+.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 4px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.arrow {
+  animation: bouncing 1s infinite ease-in-out;
+}
+
+@keyframes rightbounce {
+  0% {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  50% {
+    margin-left: 8px;
+    margin-bottom: 4px;
+  }
+  100% {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.icon:hover .arrow-right {
+  animation: rightbounce 0.75s infinite cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all;
+  transition-duration: 300ms;
+  rotate: calc(-45deg);
+}
+
+@keyframes flight {
+  0% {
+    right: 28px;
+    bottom: 14px;
+  }
+  20% {
+    right: -56px;
+    bottom: 14px;
+  }
+  40% {
+    right: -56px;
+    bottom: -28px;
+  }
+  60% {
+    right: -56px;
+    bottom: -28px;
+  }
+  80% {
+    right: 28px;
+    bottom: -28px;
+  }
+  100% {
+    right: 28px;
+    bottom: 14px;
+  }
+}
+
+@keyframes flight2 {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: -14px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .formbtn:active .send {
+    animation: flight normal 0.75s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition: all;
+    transition-duration: 300ms;
+  }
+
+  .formbtn:active span {
+    animation: flight2 normal 0.75s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition: all;
+    transition-duration: 300ms;
+  }
+}
+
+#about,
+#product,
+#partner,
+#contact {
+  scroll-margin-top: 80px;
+}
+
+@media screen and (max-width: 765px) {
+  #about,
+  #product,
+  #partner,
+  #contact {
+    scroll-margin-top: 88px;
+  }
+}
+
+.mobile-nav.hide {
+  right: -80vw;
+  transition: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.navigation .active {
+  background-color: #ff7e78;
+}
