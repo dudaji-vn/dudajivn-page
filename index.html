@@ -1,160 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/x-icon" href="./Img/dudaji-favicon.ico" />
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./Img/dudaji-favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-			body {
-				font-family: 'Open Sans', sans-serif;
-			}
-		</style>
-		<link
-			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./main.css" />
-		<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-		<!-- HTML Meta Tags -->
-		<title>Dudaji Vietnam</title>
-		<meta
-			name="description"
-			content="Dudaji Vietnam is passionate about crafting innovative software solutions that transform the way people connect."
-		/>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <!-- HTML Meta Tags -->
+    <title>Dudaji Vietnam</title>
+    <meta
+      name="description"
+      content="Dudaji Vietnam is passionate about crafting innovative software solutions that transform the way people connect."
+    />
 
-		<!-- Facebook Meta Tags -->
-		<meta property="og:url" content="https://dudaji.vn" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Dudaji Vietnam" />
-		<meta
-			property="og:description"
-			content="Dudaji Vietnam is passionate about crafting innovative software solutions that transform the way people connect."
-		/>
-		<meta
-			property="og:image"
-			content="https://opengraph.b-cdn.net/production/documents/2eb659fd-5ac3-417d-b9d8-4d169c9d9d44.jpg?token=QESq5bOD0hULOcuLn4TkXvDYFEM-BODGZwapTgCi8JU&height=630&width=1200&expires=33247598532"
-		/>
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://dudaji.vn" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dudaji Vietnam" />
+    <meta
+      property="og:description"
+      content="Dudaji Vietnam is passionate about crafting innovative software solutions that transform the way people connect."
+    />
+    <meta
+      property="og:image"
+      content="https://opengraph.b-cdn.net/production/documents/2eb659fd-5ac3-417d-b9d8-4d169c9d9d44.jpg?token=QESq5bOD0hULOcuLn4TkXvDYFEM-BODGZwapTgCi8JU&height=630&width=1200&expires=33247598532"
+    />
 
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta property="twitter:domain" content="dudaji.vn" />
-		<meta property="twitter:url" content="https://dudaji.vn" />
-		<meta name="twitter:title" content="Dudaji Vietnam" />
-		<meta
-			name="twitter:description"
-			content="Dudaji Vietnam is passionate about crafting innovative software solutions that transform the way people connect."
-		/>
-		<meta
-			name="twitter:image"
-			content="https://opengraph.b-cdn.net/production/documents/2eb659fd-5ac3-417d-b9d8-4d169c9d9d44.jpg?token=QESq5bOD0hULOcuLn4TkXvDYFEM-BODGZwapTgCi8JU&height=630&width=1200&expires=33247598532"
-		/>
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="dudaji.vn" />
+    <meta property="twitter:url" content="https://dudaji.vn" />
+    <meta name="twitter:title" content="Dudaji Vietnam" />
+    <meta
+      name="twitter:description"
+      content="Dudaji Vietnam is passionate about crafting innovative software solutions that transform the way people connect."
+    />
+    <meta
+      name="twitter:image"
+      content="https://opengraph.b-cdn.net/production/documents/2eb659fd-5ac3-417d-b9d8-4d169c9d9d44.jpg?token=QESq5bOD0hULOcuLn4TkXvDYFEM-BODGZwapTgCi8JU&height=630&width=1200&expires=33247598532"
+    />
 
-		<!-- Meta Tags Generated via https://www.opengraph.xyz -->
-	</head>
-	<body class="text-[#333] overflow-x-hidden">
-		<header
-			class="fixed z-30 w-[100vw] flex justify-between items-center px-[5vw] py-5 text-white header transition-colors duration-500"
-		>
-			<a class="shrink-0" href="#">
-				<img src="./Img/logo.png" class="h-10" />
-			</a>
-			<ul class="md:flex gap-3 hidden navigation">
-				<li>
-					<a
-						href="#about"
-						class="page-section px-5 py-3 font-semibold rounded-xl md:hover:bg-[#FF9792]"
-						>About us</a
-					>
-				</li>
-				<li>
-					<a
-						href="#product"
-						class="page-section px-5 py-3 font-semibold rounded-xl md:hover:bg-[#FF9792]"
-						>Products</a
-					>
-				</li>
-				<!-- <li>
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+  </head>
+  <body class="text-[#333] overflow-x-hidden">
+    <header
+      class="fixed z-30 w-[100vw] flex justify-between items-center px-[5vw] py-5 text-white header transition-colors duration-500"
+    >
+      <a class="shrink-0" href="#">
+        <img src="./Img/logo.png" class="h-10" />
+      </a>
+      <ul class="md:flex gap-3 hidden navigation">
+        <li>
+          <a
+            href="#about"
+            class="page-section px-5 py-3 font-semibold rounded-xl md:hover:bg-[#FF9792]"
+            >About us</a
+          >
+        </li>
+        <li>
+          <a
+            href="#product"
+            class="page-section px-5 py-3 font-semibold rounded-xl md:hover:bg-[#FF9792]"
+            >Products</a
+          >
+        </li>
+        <!-- <li>
           <a
             href="#partner"
             class="page-section px-5 py-3 font-semibold rounded-xl md:hover:bg-[#FF9792]"
             >Partners</a
           >
         </li> -->
-				<li>
-					<a
-						href="#contact"
-						class="page-section px-5 py-3 font-semibold rounded-xl md:hover:bg-[#FF9792]"
-						>Contact</a
-					>
-				</li>
-				<li>
-					<a
-						target="_blank"
-						href="https://fringe-salsa-849.notion.site/Dudaji-VN-Published-56bb001012814cb1aad472841a79dd3d?pvs=74"
-						class="page-section px-5 py-3 font-semibold rounded-xl md:hover:bg-[#FF9792]"
-						>Blog</a
-					>
-				</li>
-				<li>
-					<a
-						href="#"
-						class="px-5 py-3 font-semibold rounded-xl md:hover:bg-[#FF9792]"
-						>Recruit</a
-					>
-				</li>
-			</ul>
-			<div
-				class="h-12 w-12 flex justify-center items-center rounded-xl md:hidden navi-menu cursor-pointer active:bg-[#ff7e78] hover:bg-[#ff7e78]"
-			>
-				<i data-lucide="menu"></i>
-			</div>
-			<div
-				class="mobile-nav overflow-y-auto absolute z-50 w-[80vw] right-0 pt-5 top-0 h-dvh text-[#333] flex flex-col justify-start items-stretch bg-white transition-all duration-500 ease-in-out hide shadow-[-4px_0px_20px_0px_rgba(0,0,0,0.08)]"
-			>
-				<div class="w-full flex justify-end pr-5">
-					<div
-						class="h-12 w-12 flex justify-center items-center rounded-xl md:hidden navi-menu cursor-pointer active:bg-[#122670] mb-2 active:text-white hover:bg-[#122670] hover:text-white"
-					>
-						<i data-lucide="x"></i>
-					</div>
-				</div>
-				<div class="flex-1">
-					<a
-						class="flex items-center justify-start gap-4 border-b border-t px-[5vw] py-5 font-semibold navi-menu active:bg-[#122670] active:text-white hover:bg-[#122670] hover:text-white"
-						href="#about"
-					>
-						<div class="flex-1 flex items-center gap-4">
-							<i data-lucide="users"></i>
-							<p>About us</p>
-						</div>
-						<div class="flex gap-1">
-							<div class="size-2 bg-[#122670] rounded-sm"></div>
-							<div class="size-2 bg-[#FF9792] rounded-sm"></div>
-						</div>
-					</a>
-					<a
-						class="navi-menu active:bg-[#122670] active:text-white hover:bg-[#122670] hover:text-white flex items-center justify-start gap-4 border-b border-t px-[5vw] py-5 font-semibold"
-						href="#product"
-					>
-						<div class="flex-1 flex items-center gap-4">
-							<i data-lucide="file-code-2"></i>
-							<p>Products</p>
-						</div>
-						<div class="flex gap-1">
-							<div class="size-2 bg-[#122670] rounded-sm"></div>
-							<div class="size-2 bg-[#FF9792] rounded-sm"></div>
-						</div>
-					</a>
-					<!-- <a
+        <li>
+          <a
+            href="#contact"
+            class="page-section px-5 py-3 font-semibold rounded-xl md:hover:bg-[#FF9792]"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://fringe-salsa-849.notion.site/Dudaji-VN-Published-56bb001012814cb1aad472841a79dd3d?pvs=74"
+            class="page-section px-5 py-3 font-semibold rounded-xl md:hover:bg-[#FF9792]"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="px-5 py-3 font-semibold rounded-xl md:hover:bg-[#FF9792]"
+            >Recruit</a
+          >
+        </li>
+      </ul>
+      <div
+        class="h-12 w-12 flex justify-center items-center rounded-xl md:hidden navi-menu cursor-pointer active:bg-[#ff7e78] hover:bg-[#ff7e78]"
+      >
+        <i data-lucide="menu"></i>
+      </div>
+      <div
+        class="mobile-nav overflow-y-auto absolute z-50 w-[80vw] right-0 pt-5 top-0 h-dvh text-[#333] flex flex-col justify-start items-stretch bg-white transition-all duration-500 ease-in-out hide shadow-[-4px_0px_20px_0px_rgba(0,0,0,0.08)]"
+      >
+        <div class="w-full flex justify-end pr-5">
+          <div
+            class="h-12 w-12 flex justify-center items-center rounded-xl md:hidden navi-menu cursor-pointer active:bg-[#122670] mb-2 active:text-white hover:bg-[#122670] hover:text-white"
+          >
+            <i data-lucide="x"></i>
+          </div>
+        </div>
+        <div class="flex-1">
+          <a
+            class="flex items-center justify-start gap-4 border-b border-t px-[5vw] py-5 font-semibold navi-menu active:bg-[#122670] active:text-white hover:bg-[#122670] hover:text-white"
+            href="#about"
+          >
+            <div class="flex-1 flex items-center gap-4">
+              <i data-lucide="users"></i>
+              <p>About us</p>
+            </div>
+            <div class="flex gap-1">
+              <div class="size-2 bg-[#122670] rounded-sm"></div>
+              <div class="size-2 bg-[#FF9792] rounded-sm"></div>
+            </div>
+          </a>
+          <a
+            class="navi-menu active:bg-[#122670] active:text-white hover:bg-[#122670] hover:text-white flex items-center justify-start gap-4 border-b border-t px-[5vw] py-5 font-semibold"
+            href="#product"
+          >
+            <div class="flex-1 flex items-center gap-4">
+              <i data-lucide="file-code-2"></i>
+              <p>Products</p>
+            </div>
+            <div class="flex gap-1">
+              <div class="size-2 bg-[#122670] rounded-sm"></div>
+              <div class="size-2 bg-[#FF9792] rounded-sm"></div>
+            </div>
+          </a>
+          <!-- <a
             class="navi-menu active:bg-[#122670] active:text-white hover:bg-[#122670] hover:text-white flex items-center justify-start gap-4 border-b border-t px-[5vw] py-5 font-semibold"
             href="#partner"
           >
@@ -167,829 +171,757 @@
               <div class="size-2 bg-[#FF9792] rounded-sm"></div>
             </div>
           </a> -->
-					<a
-						class="navi-menu active:bg-[#122670] active:text-white hover:bg-[#122670] hover:text-white flex items-center justify-start gap-4 border-b border-t px-[5vw] py-5 font-semibold"
-						href="#contact"
-					>
-						<div class="flex-1 flex items-center gap-4">
-							<i data-lucide="headset"></i>
-							<p>Contact</p>
-						</div>
-						<div class="flex gap-1">
-							<div class="size-2 bg-[#122670] rounded-sm"></div>
-							<div class="size-2 bg-[#FF9792] rounded-sm"></div>
-						</div>
-					</a>
-					<a
-						class="navi-menu active:bg-[#122670] active:text-white hover:bg-[#122670] hover:text-white flex items-center justify-start gap-4 border-b border-t px-[5vw] py-5 font-semibold"
-						target="_blank"
-						href="https://fringe-salsa-849.notion.site/Dudaji-VN-Published-56bb001012814cb1aad472841a79dd3d?pvs=74"
-					>
-						<div class="flex-1 flex items-center gap-4">
-							<i data-lucide="rss"></i>
-							<p>Blog</p>
-						</div>
-						<div class="flex gap-1">
-							<div class="size-2 bg-[#122670] rounded-sm"></div>
-							<div class="size-2 bg-[#FF9792] rounded-sm"></div>
-						</div>
-					</a>
-					<a
-						class="navi-menu active:bg-[#122670] active:text-white flex items-center justify-start gap-4 border-b border-t px-[5vw] py-5 font-semibold"
-						href="#"
-					>
-						<div class="flex-1 flex items-center gap-4">
-							<i data-lucide="circle-user"></i>
-							<p>Recruit</p>
-						</div>
-						<div class="flex gap-1">
-							<div class="size-2 bg-[#122670] rounded-sm"></div>
-							<div class="size-2 bg-[#FF9792] rounded-sm"></div>
-						</div>
-					</a>
-				</div>
-				<div class="p-5 pb-10">
-					<img src="./Img/logo-dark.png" class="h-8 mt-4" alt="" />
-					<h4 class="font-semibold mt-5">
-						Dudaji, Inc © All Rights Reserved.
-					</h4>
-					<p class="text-[#666] mt-3">
-						125, Hai Ba Trung str, Ben Nghe ward, district 1, HCMC.
-					</p>
-					<p class="text-[#666] mt-1">contact@dudaji.vn</p>
-				</div>
-			</div>
-			<div
-				class="top-0 left-0 w-screen h-screen absolute z-40 bg-white/90 backdrop-blur-sm hidden overlayMask navi-menu"
-			></div>
-		</header>
+          <a
+            class="navi-menu active:bg-[#122670] active:text-white hover:bg-[#122670] hover:text-white flex items-center justify-start gap-4 border-b border-t px-[5vw] py-5 font-semibold"
+            href="#contact"
+          >
+            <div class="flex-1 flex items-center gap-4">
+              <i data-lucide="headset"></i>
+              <p>Contact</p>
+            </div>
+            <div class="flex gap-1">
+              <div class="size-2 bg-[#122670] rounded-sm"></div>
+              <div class="size-2 bg-[#FF9792] rounded-sm"></div>
+            </div>
+          </a>
+          <a
+            class="navi-menu active:bg-[#122670] active:text-white hover:bg-[#122670] hover:text-white flex items-center justify-start gap-4 border-b border-t px-[5vw] py-5 font-semibold"
+            target="_blank"
+            href="https://fringe-salsa-849.notion.site/Dudaji-VN-Published-56bb001012814cb1aad472841a79dd3d?pvs=74"
+          >
+            <div class="flex-1 flex items-center gap-4">
+              <i data-lucide="rss"></i>
+              <p>Blog</p>
+            </div>
+            <div class="flex gap-1">
+              <div class="size-2 bg-[#122670] rounded-sm"></div>
+              <div class="size-2 bg-[#FF9792] rounded-sm"></div>
+            </div>
+          </a>
+          <a
+            class="navi-menu active:bg-[#122670] active:text-white flex items-center justify-start gap-4 border-b border-t px-[5vw] py-5 font-semibold"
+            href="#"
+          >
+            <div class="flex-1 flex items-center gap-4">
+              <i data-lucide="circle-user"></i>
+              <p>Recruit</p>
+            </div>
+            <div class="flex gap-1">
+              <div class="size-2 bg-[#122670] rounded-sm"></div>
+              <div class="size-2 bg-[#FF9792] rounded-sm"></div>
+            </div>
+          </a>
+        </div>
+        <div class="p-5 pb-10">
+          <img src="./Img/logo-dark.png" class="h-8 mt-4" alt="" />
+          <h4 class="font-semibold mt-5">Dudaji, Inc © All Rights Reserved.</h4>
+          <p class="text-[#666] mt-3">
+            125, Hai Ba Trung str, Ben Nghe ward, district 1, HCMC.
+          </p>
+          <p class="text-[#666] mt-1">contact@dudaji.vn</p>
+        </div>
+      </div>
+      <div
+        class="top-0 left-0 w-screen h-screen absolute z-40 bg-white/90 backdrop-blur-sm hidden overlayMask navi-menu"
+      ></div>
+    </header>
 
-		<!-- First screen -->
-		<div class="relative h-screen w-[100vw]">
-			<video
-				autoplay
-				playsinline
-				muted
-				loop
-				id="myVideo"
-				class="absolute object-cover h-full right-0 w-dvw"
-			>
-				<source src="./Video/0319.mp4" type="video/mp4" />
-			</video>
-			<div
-				data-aos="fade-right"
-				data-aos-duration="500"
-				data-aos-easing="ease-in-out"
-				class="absolute w-[100vw] h-full z-10 bg-[#050814]/50 backdrop-blur-[2px]"
-			></div>
-			<div
-				class="w-[100vw] flex md:pb-0 justify-center items-start md:items-center gap-3 md:gap-10 flex-col h-dvh relative z-10"
-			>
-				<h2
-					data-aos="fade-up"
-					data-aos-duration="500"
-					class="font-semibold text-2xl md:text-[36px] px-[5vw] text-[#3cb1ff]"
-				>
-					EMPOWERING SEAMLESS
-				</h2>
-				<div
-					data-aos="fade-up"
-					data-aos-duration="500"
-					class="md:hidden px-[4vw]"
-				>
-					<img src="./Img/Comp 1.gif" alt="" class="w-[88%]" />
-				</div>
-				<div
-					data-aos="fade-up"
-					data-aos-duration="500"
-					class="hidden md:flex max-w-[90vw] justify-center items-end md:items-center"
-				>
-					<h1
-						class="text-white font-bold text-5xl md:text-[72px] leading-[60px] text-center text-wrap typed-text"
-					></h1>
-					<span class="cursor">&nbsp;</span>
-				</div>
-				<div class="absolute w-[100vw] justify-center bottom-5 flex">
-					<div
-						class="bg-white/10 flex justify-center items-center h-12 w-12 rounded-full scroll-down transition-opacity duration-500"
-					>
-						<i
-							data-lucide="mouse"
-							class="size-6 text-white arrow relative"
-						></i>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!-- First screen -->
+    <div class="relative h-screen w-[100vw]">
+      <video
+        autoplay
+        playsinline
+        muted
+        loop
+        id="myVideo"
+        class="absolute object-cover h-full right-0 w-dvw"
+      >
+        <source src="./Video/0319.mp4" type="video/mp4" />
+      </video>
+      <div
+        data-aos="fade-right"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        class="absolute w-[100vw] h-full z-10 bg-[#050814]/50 backdrop-blur-[2px]"
+      ></div>
+      <div
+        class="w-[100vw] flex md:pb-0 justify-center items-start md:items-center gap-3 md:gap-10 flex-col h-dvh relative z-10"
+      >
+        <h2
+          data-aos="fade-up"
+          data-aos-duration="500"
+          class="font-semibold text-2xl md:text-[36px] px-[5vw] text-[#3cb1ff]"
+        >
+          EMPOWERING SEAMLESS
+        </h2>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+          class="md:hidden px-[4vw]"
+        >
+          <img src="./Img/Comp 1.gif" alt="" class="w-[88%]" />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+          class="hidden md:flex max-w-[90vw] justify-center items-end md:items-center"
+        >
+          <h1
+            class="text-white font-bold text-5xl md:text-[72px] leading-[60px] text-center text-wrap typed-text"
+          ></h1>
+          <span class="cursor">&nbsp;</span>
+        </div>
+        <div class="absolute w-[100vw] justify-center bottom-5 flex">
+          <div
+            class="bg-white/10 flex justify-center items-center h-12 w-12 rounded-full scroll-down transition-opacity duration-500"
+          >
+            <i data-lucide="mouse" class="size-6 text-white arrow relative"></i>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- About us -->
-		<div
-			id="about"
-			data-aos="fade-up"
-			data-aos-offset="100"
-			data-aos-duration="800"
-			class="md:pl-[5vw] py-12 px-[5vw] md:py-[5vw] bg-[url('./Img/aboutus.jpg')] bg-cover bg-top bg-fixed flex md:flex-row flex-col-reverse items-stretch md:gap-0 gap-10"
-		>
-			<div
-				id="scene"
-				class="md:w-[40%] flex justify-center items-center relative"
-			>
-				<img
-					src="./Img/about 1.png"
-					alt=""
-					class="w-[80%] relative z-10 thumbnail shadow-[0_8px_30px_rgb(0,0,0,0.12)] md:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] overflow-hidden rounded-3xl"
-				/>
-				<div
-					data-aos="fade-up-left"
-					data-aos-anchor="#scene"
-					data-aos-anchor-placement="top-center"
-					data-aos-duration="800"
-					data-aos-offset="20"
-					class="w-52 h-52 absolute left-0 top-0 bg-[#122670] rounded-3xl hidden md:block"
-				></div>
-				<div
-					class="w-32 h-32 absolute left-0 top-0 bg-[#122670] rounded-2xl md:hidden"
-				></div>
-				<div
-					data-aos="fade-down-right"
-					data-aos-anchor="#scene"
-					data-aos-anchor-placement="top-center"
-					data-aos-duration="800"
-					data-aos-offset="20"
-					class="w-32 h-32 absolute right-0 bottom-0 bg-[#FF9792] rounded-3xl hidden md:block"
-				></div>
-				<div
-					class="w-16 h-16 absolute right-0 bottom-0 bg-[#FF9792] rounded-2xl md:hidden"
-				></div>
-			</div>
-			<div class="flex-1 px-0 md:-mr-[5vw]">
-				<div class="md:ml-[5vw] ml-0 flex items-baseline gap-2">
-					<div class="flex gap-1">
-						<div class="size-2 bg-[#122670] rounded-sm"></div>
-						<div class="size-2 bg-[#FF9792] rounded-sm"></div>
-					</div>
-					<div class="font-semibold text-2xl text-[#666]">
-						About us
-					</div>
-				</div>
-				<h1
-					class="md:text-5xl text-2xl font-semibold md:py-10 p-[5vw] md:px-[5vw] bg-[#D0DEF1]/60 md:bg-[#D0DEF1]/10 backdrop-blur-sm md:leading-[80px] leading-[48px] my-8 rounded-tr-xl md:rounded-tr-none rounded-br-xl md:rounded-br-none rounded-s-xl rounded-bl-xl"
-				>
-					Bridging the Global Gap: <br />
-					<span class="text-[#122670] font-bold md:text-6xl text-4xl"
-						>Dudaji Vietnam</span
-					>
-				</h1>
-				<div class="flex items-stretch gap-3 md:px-[5vw] px-0">
-					<div class="w-2 bg-[#666]"></div>
-					<p>
-						At Dudaji Vietnam, we're passionate about crafting
-						innovative software solutions that transform the way
-						people connect. We believe clear and efficient
-						communication is the cornerstone of strong
-						relationships, and our development team focuses on
-						creating tools that empower users to have more
-						meaningful interactions.
-					</p>
-				</div>
-			</div>
-		</div>
+    <!-- About us -->
+    <div
+      id="about"
+      data-aos="fade-up"
+      data-aos-offset="100"
+      data-aos-duration="800"
+      class="md:pl-[5vw] py-12 px-[5vw] md:py-[5vw] bg-[url('./Img/aboutus.jpg')] bg-cover bg-top bg-fixed flex md:flex-row flex-col-reverse items-stretch md:gap-0 gap-10"
+    >
+      <div
+        id="scene"
+        class="md:w-[40%] flex justify-center items-center relative"
+      >
+        <img
+          src="./Img/about 1.png"
+          alt=""
+          class="w-[80%] relative z-10 thumbnail shadow-[0_8px_30px_rgb(0,0,0,0.12)] md:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] overflow-hidden rounded-3xl"
+        />
+        <div
+          data-aos="fade-up-left"
+          data-aos-anchor="#scene"
+          data-aos-anchor-placement="top-center"
+          data-aos-duration="800"
+          data-aos-offset="20"
+          class="w-52 h-52 absolute left-0 top-0 bg-[#122670] rounded-3xl hidden md:block"
+        ></div>
+        <div
+          class="w-32 h-32 absolute left-0 top-0 bg-[#122670] rounded-2xl md:hidden"
+        ></div>
+        <div
+          data-aos="fade-down-right"
+          data-aos-anchor="#scene"
+          data-aos-anchor-placement="top-center"
+          data-aos-duration="800"
+          data-aos-offset="20"
+          class="w-32 h-32 absolute right-0 bottom-0 bg-[#FF9792] rounded-3xl hidden md:block"
+        ></div>
+        <div
+          class="w-16 h-16 absolute right-0 bottom-0 bg-[#FF9792] rounded-2xl md:hidden"
+        ></div>
+      </div>
+      <div class="flex-1 px-0 md:-mr-[5vw]">
+        <div class="md:ml-[5vw] ml-0 flex items-baseline gap-2">
+          <div class="flex gap-1">
+            <div class="size-2 bg-[#122670] rounded-sm"></div>
+            <div class="size-2 bg-[#FF9792] rounded-sm"></div>
+          </div>
+          <div class="font-semibold text-2xl text-[#666]">About us</div>
+        </div>
+        <h1
+          class="md:text-5xl text-2xl font-semibold md:py-10 p-[5vw] md:px-[5vw] bg-[#D0DEF1]/60 md:bg-[#D0DEF1]/10 backdrop-blur-sm md:leading-[80px] leading-[48px] my-8 rounded-tr-xl md:rounded-tr-none rounded-br-xl md:rounded-br-none rounded-s-xl rounded-bl-xl"
+        >
+          Bridging the Global Gap: <br />
+          <span class="text-[#122670] font-bold md:text-6xl text-4xl"
+            >Dudaji Vietnam</span
+          >
+        </h1>
+        <div class="flex items-stretch gap-3 md:px-[5vw] px-0">
+          <div class="w-2 bg-[#666]"></div>
+          <p>
+            At Dudaji Vietnam, we're passionate about crafting innovative
+            software solutions that transform the way people connect. We believe
+            clear and efficient communication is the cornerstone of strong
+            relationships, and our development team focuses on creating tools
+            that empower users to have more meaningful interactions.
+          </p>
+        </div>
+      </div>
+    </div>
 
-		<!-- Products -->
-		<div
-			id="product"
-			data-aos="fade-up"
-			data-aos-offset="100"
-			data-aos-duration="800"
-			class="px-[5vw] py-12 md:py-[5vw] bg-[#F8FAFC]"
-		>
-			<div class="flex items-baseline gap-2">
-				<div class="flex gap-1">
-					<div class="size-2 bg-[#122670] rounded-sm"></div>
-					<div class="size-2 bg-[#FF9792] rounded-sm"></div>
-				</div>
-				<div class="font-semibold text-2xl text-[#666]">Products</div>
-			</div>
-			<div class="mt-8">
-				<div
-					class="gap-5 items-stretch flex md:grid md:grid-cols-2 box-border flex-col"
-				>
-					<div class="overflow-hidden rounded-xl">
-						<div
-							class="bg-[url('./Img/middo.png')] bg-cover bg-top md:min-h-[310px] md:hover:scale-110 duration-700 transition-transform ease-in-out"
-						>
-							<img
-								src="./Img/middo.png"
-								alt=""
-								class="md:hidden"
-							/>
-						</div>
-					</div>
-					<div
-						class="md:p-14 p-5 bg-white rounded-xl flex flex-col items-start justify-center"
-					>
-						<img
-							src="./Img/middo-logo.png"
-							alt=""
-							class="h-12 mb-5"
-						/>
-						<div
-							class="flex gap-5 items-start md:items-end md:flex-row flex-col w-full"
-						>
-							<div class="flex gap-3 flex-col">
-								<!-- <p class="text-2xl font-semibold">Project: Middo</p> -->
-								<p class="text-[#666]">
-									Delivering Unparalleled Accuracy Through Our
-									Innovative Translation Process
-								</p>
-								<div
-									class="flex gap-2 items-cemter md:flex-row flex-col"
-								>
-									<p>Platform:</p>
-									<div
-										class="flex gap-2 items-center flex-wrap"
-									>
-										<div
-											class="px-2 py-1 rounded-lg text-white bg-[#FF9792] flex gap-1 items-center"
-										>
-											<i
-												data-lucide="laptop"
-												class="size-4"
-											></i>
-											<p class="text-sm">Desktop app</p>
-										</div>
-										<div
-											class="px-2 py-1 rounded-lg text-white bg-[#FF9792] flex gap-1 items-center"
-										>
-											<i
-												data-lucide="smartphone"
-												class="size-4"
-											></i>
-											<p class="text-sm">Mobile app</p>
-										</div>
-										<div
-											class="px-2 py-1 rounded-lg text-white bg-[#FF9792] flex gap-1 items-center"
-										>
-											<i
-												data-lucide="globe"
-												class="size-4"
-											></i>
-											<p class="text-sm">Browser</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<a
-								target="blank"
-								href="https://middo.app/landing"
-								class="icon shrink-0 h-14 bg-[#122670] rounded-xl flex items-center justify-center md:w-14 w-full md:hover:bg-[#FF9792] transition-colors duration-500 ease-in-out active:!bg-[#031532]"
-							>
-								<i
-									data-lucide="arrow-right"
-									class="material-symbols-outlined text-white hidden md:block arrow-right"
-								></i>
-								<span class="text-white font-semibold md:hidden"
-									>Explore</span
-								>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div
-					class="md:grid md:grid-cols-2 gap-5 items-stretch flex flex-col-reverse mt-5"
-				>
-					<div
-						class="md:p-14 p-5 bg-white rounded-xl flex flex-col items-start justify-center"
-					>
-						<img
-							src="./Img/ttalk-logo.png"
-							alt=""
-							class="h-[22px] mb-5"
-						/>
-						<div
-							class="flex gap-5 items-start md:items-end md:flex-row flex-col w-full"
-						>
-							<div class="flex gap-3 flex-col">
-								<!-- <p class="text-2xl font-semibold">Project: Techtalk</p> -->
-								<p class="text-[#666]">
-									Enhance Communication Fluency Through
-									Pronunciation Refinement
-								</p>
-								<div
-									class="flex gap-2 items-cemter md:flex-row flex-col"
-								>
-									<p class="text-[#666]">Platform:</p>
-									<div
-										class="flex gap-2 items-center flex-wrap"
-									>
-										<div
-											class="px-2 py-1 rounded-lg text-white bg-[#FF9792] flex gap-1 items-center"
-										>
-											<i
-												data-lucide="globe"
-												class="size-4"
-											></i>
-											<p class="text-sm">Browser</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<a
-								target="_blank"
-								href="https://ttalk.onrender.com"
-								class="icon shrink-0 h-14 bg-[#122670] rounded-xl flex items-center justify-center md:w-14 w-full md:hover:bg-[#FF9792] transition-colors duration-500 ease-in-out active:!bg-[#031532]"
-							>
-								<i
-									data-lucide="arrow-right"
-									class="material-symbols-outlined text-white hidden md:block arrow-right"
-								></i>
-								<span class="text-white font-semibold md:hidden"
-									>Explore</span
-								>
-							</a>
-						</div>
-					</div>
-					<div class="overflow-hidden rounded-xl">
-						<div
-							class="bg-[url('./Img/ttalk.png')] bg-cover bg-center md:min-h-[310px] md:hover:scale-110 duration-700 transition-transform ease-in-out"
-						>
-							<img
-								src="./Img/ttalk.png"
-								alt=""
-								class="md:hidden"
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!-- Products -->
+    <div
+      id="product"
+      data-aos="fade-up"
+      data-aos-offset="100"
+      data-aos-duration="800"
+      class="px-[5vw] py-12 md:py-[5vw] bg-[#F8FAFC]"
+    >
+      <div class="flex items-baseline gap-2">
+        <div class="flex gap-1">
+          <div class="size-2 bg-[#122670] rounded-sm"></div>
+          <div class="size-2 bg-[#FF9792] rounded-sm"></div>
+        </div>
+        <div class="font-semibold text-2xl text-[#666]">Products</div>
+      </div>
+      <div class="mt-8">
+        <div
+          class="gap-5 items-stretch flex md:grid md:grid-cols-2 box-border flex-col"
+        >
+          <div class="overflow-hidden rounded-xl">
+            <div
+              class="bg-[url('./Img/middo.png')] bg-cover bg-top md:min-h-[310px] md:hover:scale-110 duration-700 transition-transform ease-in-out"
+            >
+              <img src="./Img/middo.png" alt="" class="md:hidden" />
+            </div>
+          </div>
+          <div
+            class="md:p-14 p-5 bg-white rounded-xl flex flex-col items-start justify-center"
+          >
+            <img src="./Img/middo-logo.png" alt="" class="h-12 mb-5" />
+            <div
+              class="flex gap-5 items-start md:items-end md:flex-row flex-col w-full"
+            >
+              <div class="flex gap-3 flex-col">
+                <!-- <p class="text-2xl font-semibold">Project: Middo</p> -->
+                <p class="text-[#666]">
+                  Delivering Unparalleled Accuracy Through Our Innovative
+                  Translation Process
+                </p>
+                <div class="flex gap-2 items-cemter md:flex-row flex-col">
+                  <p>Platform:</p>
+                  <div class="flex gap-2 items-center flex-wrap">
+                    <div
+                      class="px-2 py-1 rounded-lg text-white bg-[#FF9792] flex gap-1 items-center"
+                    >
+                      <i data-lucide="laptop" class="size-4"></i>
+                      <p class="text-sm">Desktop app</p>
+                    </div>
+                    <div
+                      class="px-2 py-1 rounded-lg text-white bg-[#FF9792] flex gap-1 items-center"
+                    >
+                      <i data-lucide="smartphone" class="size-4"></i>
+                      <p class="text-sm">Mobile app</p>
+                    </div>
+                    <div
+                      class="px-2 py-1 rounded-lg text-white bg-[#FF9792] flex gap-1 items-center"
+                    >
+                      <i data-lucide="globe" class="size-4"></i>
+                      <p class="text-sm">Browser</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                target="blank"
+                href="https://middo.app/landing"
+                class="icon shrink-0 h-14 bg-[#122670] rounded-xl flex items-center justify-center md:w-14 w-full md:hover:bg-[#FF9792] transition-colors duration-500 ease-in-out active:!bg-[#031532]"
+              >
+                <i
+                  data-lucide="arrow-right"
+                  class="material-symbols-outlined text-white hidden md:block arrow-right"
+                ></i>
+                <span class="text-white font-semibold md:hidden">Explore</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="md:grid md:grid-cols-2 gap-5 items-stretch flex flex-col-reverse mt-5"
+        >
+          <div
+            class="md:p-14 p-5 bg-white rounded-xl flex flex-col items-start justify-center"
+          >
+            <img src="./Img/ttalk-logo.png" alt="" class="h-[22px] mb-5" />
+            <div
+              class="flex gap-5 items-start md:items-end md:flex-row flex-col w-full"
+            >
+              <div class="flex gap-3 flex-col">
+                <!-- <p class="text-2xl font-semibold">Project: Techtalk</p> -->
+                <p class="text-[#666]">
+                  Enhance Communication Fluency Through Pronunciation Refinement
+                </p>
+                <div class="flex gap-2 items-cemter md:flex-row flex-col">
+                  <p class="text-[#666]">Platform:</p>
+                  <div class="flex gap-2 items-center flex-wrap">
+                    <div
+                      class="px-2 py-1 rounded-lg text-white bg-[#FF9792] flex gap-1 items-center"
+                    >
+                      <i data-lucide="globe" class="size-4"></i>
+                      <p class="text-sm">Browser</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                target="_blank"
+                href="https://ttalk.onrender.com"
+                class="icon shrink-0 h-14 bg-[#122670] rounded-xl flex items-center justify-center md:w-14 w-full md:hover:bg-[#FF9792] transition-colors duration-500 ease-in-out active:!bg-[#031532]"
+              >
+                <i
+                  data-lucide="arrow-right"
+                  class="material-symbols-outlined text-white hidden md:block arrow-right"
+                ></i>
+                <span class="text-white font-semibold md:hidden">Explore</span>
+              </a>
+            </div>
+          </div>
+          <div class="overflow-hidden rounded-xl">
+            <div
+              class="bg-[url('./Img/ttalk.png')] bg-cover bg-center md:min-h-[310px] md:hover:scale-110 duration-700 transition-transform ease-in-out"
+            >
+              <img src="./Img/ttalk.png" alt="" class="md:hidden" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<div
-			id="contact"
-			data-aos="fade-up"
-			data-aos-offset="100"
-			data-aos-duration="800"
-			class="bg-[url('./Img/contact-bg.jpg')] bg-cover bg-center bg-no-repeat bg-fixed px-[5vw] pt-12 md:pt-[5vw] flex md:flex-row md:gap-[5vw] flex-col gap-5"
-		>
-			<div class="flex-1 flex flex-col pb-[5vw]">
-				<div class="flex items-baseline gap-2">
-					<div class="flex gap-1">
-						<div class="size-2 bg-[#122670] rounded-sm"></div>
-						<div class="size-2 bg-[#FF9792] rounded-sm"></div>
-					</div>
-					<div class="font-semibold text-2xl text-[#666]">
-						Contact
-					</div>
-				</div>
-				<h3 class="text-3xl font-semibold text-[#122670] mt-8">
-					Dudaji <span class="text-[#FF9792]">Vietnam</span>
-				</h3>
-				<div>
-					<p class="text-[#666] mt-5">
-						Add.
-						<span class="font-semibold text-[#333]"
-							>135, Hai Ba Trung str, Ben Nghe ward, district 1,
-							HCMC.</span
-						>
-					</p>
-					<p class="text-[#666] mt-2">
-						Email.
-						<span class="font-semibold text-[#333]"
-							>contact@dudaji.vn</span
-						>
-					</p>
-				</div>
-				<div class="mt-5 overflow-hidden rounded-xl h-full">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3778069119753!2d106.69594667537916!3d10.782348459083718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f36156267c7%3A0xfb2f71de82868922!2zMTM1IEhhaSBCw6AgVHLGsG5nLCBC4bq_biBOZ2jDqSwgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1711439904371!5m2!1sen!2s"
-						style="border: 0; width: 100%; height: 100%"
-						allowfullscreen=""
-						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"
-					></iframe>
-				</div>
-				<div class="flex flex-col flex-1 items-stretch"></div>
-			</div>
-			<form
-				id="contactForm"
-				class="flex-1 p-5 bg-[#F8FAFC] rounded-t-xl rounded-tr-xl pb-10"
-				autocomplete="on"
-			>
-				<div class="flex items-stretch gap-2">
-					<div class="w-1 bg-[#FF9792]"></div>
-					<p class="text-[#FF9792] font-medium">
-						Tell us a bit about yourself, and we'll get in touch as
-						soon as we can.
-					</p>
-				</div>
-				<div class="flex md:flex-row flex-col gap-5 mt-5">
-					<div class="flex-1">
-						<label class="block mb-2" for="client-name"
-							>Your name</label
-						>
-						<input
-							required
-							type="text"
-							name="client-name"
-							id="client-name"
-							class="py-2 px-3 border border-[#f2f2f2] rounded-xl w-full"
-							placeholder="Enter your name"
-						/>
-					</div>
-					<div class="flex-1">
-						<label class="block mb-2" for="client-phone"
-							>Your phone number</label
-						>
-						<input
-							required
-							type="text"
-							inputmode="tel"
-							name="client-phone"
-							id="client-phone"
-							class="py-2 px-3 border border-[#f2f2f2] rounded-xl w-full"
-							placeholder="Enter your phone number"
-						/>
-					</div>
-				</div>
-				<div class="flex md:flex-row flex-col gap-5 mt-5">
-					<div class="flex-1">
-						<label class="block mb-2" for="client-mail"
-							>Your email</label
-						>
-						<input
-							required
-							type="text"
-							name="client-mail"
-							inputmode="email"
-							id="client-mail"
-							class="py-2 px-3 border border-[#f2f2f2] rounded-xl w-full"
-							placeholder="Enter your email"
-						/>
-					</div>
-					<div class="flex-1">
-						<label class="block mb-2" for="company-name"
-							>Your company name</label
-						>
-						<input
-							required
-							type="text"
-							name="company-name"
-							id="company-name"
-							class="py-2 px-3 border border-[#f2f2f2] rounded-xl w-full"
-							placeholder="Enter your company name"
-						/>
-					</div>
-				</div>
-				<div class="mt-5">
-					<label class="block mb-2" for="subject">Subject</label>
-					<input
-						required
-						type="text"
-						name="subject"
-						id="subject"
-						class="py-2 px-3 border border-[#f2f2f2] rounded-xl w-full"
-						placeholder="Enter subject here"
-					/>
-				</div>
-				<div class="mt-5">
-					<label class="block mb-2" for="message">Message</label>
-					<textarea
-						required
-						name="message"
-						id="message"
-						class="w-full min-h-40 py-2 px-3 border border-[#f2f2f2] rounded-xl"
-						placeholder="Enter your message here"
-					></textarea>
-				</div>
-				<div class="w-full flex justify-end mt-5">
-					<button
-						type="submit"
-						class="md:w-fit formbtn group md:hover:bg-[#FF9792] transition-colors duration-500 ease-in-out flex justify-center items-center gap-2 px-7 h-12 rounded-xl bg-[#122670] w-full active:!bg-[#031532] text-white font-semibold relative min-h-14"
-					>
-						<span class="md:mr-7 relative">Send information</span>
-						<i
-							data-lucide="send"
-							class="send md:right-7 md:absolute size-5 md:group-hover:rotate-45 transition-all duration-500 ease-in-out"
-						></i>
-					</button>
-				</div>
-			</form>
-		</div>
+    <div
+      id="contact"
+      data-aos="fade-up"
+      data-aos-offset="100"
+      data-aos-duration="800"
+      class="bg-[url('./Img/contact-bg.jpg')] bg-cover bg-center bg-no-repeat bg-fixed px-[5vw] pt-12 md:pt-[5vw] flex md:flex-row md:gap-[5vw] flex-col gap-5"
+    >
+      <div class="flex-1 flex flex-col pb-[5vw]">
+        <div class="flex items-baseline gap-2">
+          <div class="flex gap-1">
+            <div class="size-2 bg-[#122670] rounded-sm"></div>
+            <div class="size-2 bg-[#FF9792] rounded-sm"></div>
+          </div>
+          <div class="font-semibold text-2xl text-[#666]">Contact</div>
+        </div>
+        <h3 class="text-3xl font-semibold text-[#122670] mt-8">
+          Dudaji <span class="text-[#FF9792]">Vietnam</span>
+        </h3>
+        <div>
+          <p class="text-[#666] mt-5">
+            Add.
+            <span class="font-semibold text-[#333]"
+              >135, Hai Ba Trung str, Ben Nghe ward, district 1, HCMC.</span
+            >
+          </p>
+          <p class="text-[#666] mt-2">
+            Email.
+            <span class="font-semibold text-[#333]">contact@dudaji.vn</span>
+          </p>
+        </div>
+        <div class="mt-5 overflow-hidden rounded-xl h-full">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3778069119753!2d106.69594667537916!3d10.782348459083718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f36156267c7%3A0xfb2f71de82868922!2zMTM1IEhhaSBCw6AgVHLGsG5nLCBC4bq_biBOZ2jDqSwgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1711439904371!5m2!1sen!2s"
+            style="border: 0; width: 100%; height: 100%"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="flex flex-col flex-1 items-stretch"></div>
+      </div>
+      <form
+        id="contactForm"
+        class="flex-1 p-5 bg-[#F8FAFC] rounded-t-xl rounded-tr-xl pb-10"
+        autocomplete="on"
+      >
+        <div class="flex items-stretch gap-2">
+          <div class="w-1 bg-[#FF9792]"></div>
+          <p class="text-[#FF9792] font-medium">
+            Tell us a bit about yourself, and we'll get in touch as soon as we
+            can.
+          </p>
+        </div>
+        <div class="flex md:flex-row flex-col gap-5 mt-5">
+          <div class="flex-1">
+            <label class="block mb-2" for="client-name">Your name</label>
+            <input
+              required
+              type="text"
+              name="client-name"
+              id="client-name"
+              class="py-2 px-3 border border-[#f2f2f2] rounded-xl w-full"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="flex-1">
+            <label class="block mb-2" for="client-phone"
+              >Your phone number</label
+            >
+            <input
+              required
+              type="text"
+              inputmode="tel"
+              name="client-phone"
+              id="client-phone"
+              class="py-2 px-3 border border-[#f2f2f2] rounded-xl w-full"
+              placeholder="Enter your phone number"
+            />
+          </div>
+        </div>
+        <div class="flex md:flex-row flex-col gap-5 mt-5">
+          <div class="flex-1">
+            <label class="block mb-2" for="client-mail">Your email</label>
+            <input
+              required
+              type="text"
+              name="client-mail"
+              inputmode="email"
+              id="client-mail"
+              class="py-2 px-3 border border-[#f2f2f2] rounded-xl w-full"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="flex-1">
+            <label class="block mb-2" for="company-name"
+              >Your company name</label
+            >
+            <input
+              required
+              type="text"
+              name="company-name"
+              id="company-name"
+              class="py-2 px-3 border border-[#f2f2f2] rounded-xl w-full"
+              placeholder="Enter your company name"
+            />
+          </div>
+        </div>
+        <div class="mt-5">
+          <label class="block mb-2" for="subject">Subject</label>
+          <input
+            required
+            type="text"
+            name="subject"
+            id="subject"
+            class="py-2 px-3 border border-[#f2f2f2] rounded-xl w-full"
+            placeholder="Enter subject here"
+          />
+        </div>
+        <div class="mt-5">
+          <label class="block mb-2" for="message">Message</label>
+          <textarea
+            required
+            name="message"
+            id="message"
+            class="w-full min-h-40 py-2 px-3 border border-[#f2f2f2] rounded-xl"
+            placeholder="Enter your message here"
+          ></textarea>
+        </div>
+        <div class="w-full flex justify-end mt-5">
+          <button
+            type="submit"
+            class="md:w-fit formbtn group md:hover:bg-[#FF9792] transition-colors duration-500 ease-in-out flex justify-center items-center gap-2 px-7 h-12 rounded-xl bg-[#122670] w-full active:!bg-[#031532] text-white font-semibold relative min-h-14"
+          >
+            <span class="md:mr-7 relative">Send information</span>
+            <i
+              data-lucide="send"
+              class="send md:right-7 md:absolute size-5 md:group-hover:rotate-45 transition-all duration-500 ease-in-out"
+            ></i>
+          </button>
+        </div>
+      </form>
+    </div>
 
-		<!-- Dudaji Korean -->
-		<div
-			class="p-[5vw] md:py-[5vw] py-12 bg-[#2a2b2f] flex flex-col justify-start items-center gap-8 bg-[url('./Img/dk-bg.jpeg')] bg-fixed"
-		>
-			<img src="./Img/logo-white.png" alt="" class="w-48" />
-			<h3 class="text-white text-3xl font-semibold text-center">
-				Machine Learning and Deep Learning Service Accelerator
-			</h3>
-			<a
-				href="https://www.dudaji.com"
-				target="_blank"
-				class="text-white px-7 h-14 rounded-xl border border-white flex gap-3 justify-center items-center hover:bg-white hover:text-[#333]"
-				>Go to Dudaji Korean
-				<i data-lucide="move-right" class="size-5"></i
-			></a>
-		</div>
+    <!-- Dudaji Korean -->
+    <div
+      class="p-[5vw] md:py-[5vw] py-12 bg-[#2a2b2f] flex flex-col justify-start items-center gap-8 bg-[url('./Img/dk-bg.jpeg')] bg-fixed"
+    >
+      <img src="./Img/logo-white.png" alt="" class="w-48" />
+      <h3 class="text-white text-3xl font-semibold text-center">
+        Machine Learning and Deep Learning Service Accelerator
+      </h3>
+      <a
+        href="https://www.dudaji.com"
+        target="_blank"
+        class="text-white px-7 h-14 rounded-xl border border-white flex gap-3 justify-center items-center hover:bg-white hover:text-[#333]"
+        >Go to Dudaji Korean <i data-lucide="move-right" class="size-5"></i
+      ></a>
+    </div>
 
-		<footer>
-			<div class="flex gap-2">
-				<div class="h-2 w-[25%] bg-[#FF9792]"></div>
-				<div class="h-2 w-[75%] bg-[#122670]"></div>
-			</div>
-			<div
-				class="px-[5vw] py-12 flex md:flex-row flex-col items-stretch justify-between"
-			>
-				<div>
-					<img src="./Img/f-logo.png" class="h-10" alt="" />
-					<h4 class="font-semibold mt-5">
-						Dudaji, Inc © All Rights Reserved.
-					</h4>
-					<div class="flex justify-start items-baseline gap-2">
-						<div class="size-2 rounded-[2px] bg-[#122670]"></div>
-						<p class="text-[#666] mt-3">
-							135, Hai Ba Trung str, Ben Nghe ward, district 1,
-							HCMC.
-						</p>
-					</div>
-					<div class="flex justify-start items-baseline gap-2">
-						<div class="size-2 rounded-[2px] bg-[#ff9792]"></div>
-						<p class="text-[#666] mt-1">contact@dudaji.vn</p>
-					</div>
-				</div>
-				<div
-					class="flex flex-col justify-between items-start md:items-end mt-12"
-				>
-					<ul class="flex gap-3 items-center flex-wrap">
-						<li>
-							<a
-								href="#about"
-								class="font-semibold hover:text-[#122670] active:text-[#031532]"
-								><p>About us</p></a
-							>
-						</li>
-						<li>
-							<div class="size-2 bg-[#122670] rounded-full"></div>
-						</li>
-						<li>
-							<a
-								href="#product"
-								class="font-semibold hover:text-[#122670] active:text-[#031532]"
-								><p>Products</p></a
-							>
-						</li>
-						<li>
-							<div class="size-2 bg-[#122670] rounded-full"></div>
-						</li>
-						<li>
-							<a
-								href="#contact"
-								class="font-semibold hover:text-[#122670] active:text-[#031532]"
-								><p>Contact</p></a
-							>
-						</li>
-						<li>
-							<div class="size-2 bg-[#122670] rounded-full"></div>
-						</li>
-						<li>
-							<a
-								href="https://fringe-salsa-849.notion.site/Dudaji-VN-Published-56bb001012814cb1aad472841a79dd3d?pvs=74"
-								target="_blank"
-								class="font-semibold hover:text-[#122670] active:text-[#031532]"
-								><p>Blog</p></a
-							>
-						</li>
-						<li>
-							<div class="size-2 bg-[#122670] rounded-full"></div>
-						</li>
-						<li>
-							<a
-								href="#"
-								class="font-semibold hover:text-[#122670] active:text-[#031532]"
-								><p>Recruit</p></a
-							>
-						</li>
-					</ul>
-					<div class="flex gap-8 mt-12 md:mt-0">
-						<a
-							href="https://www.facebook.com/profile.php?id=61555142122783"
-							target="_blank"
-							class="border-b-[#FF9792] border-b-4 pb-1"
-							><i
-								data-lucide="facebook"
-								fill="#122670"
-								class="size-8 text-[#122670]"
-							></i
-						></a>
-						<a
-							href="https://www.linkedin.com/company/dudaji-vietnam/"
-							target="_blank"
-							class="border-b-[#FF9792] border-b-4 pb-1"
-							><i
-								data-lucide="linkedin"
-								fill="#122670"
-								class="size-8 text-[#122670]"
-							></i
-						></a>
-					</div>
-				</div>
-			</div>
-		</footer>
+    <footer>
+      <div class="flex gap-2">
+        <div class="h-2 w-[25%] bg-[#FF9792]"></div>
+        <div class="h-2 w-[75%] bg-[#122670]"></div>
+      </div>
+      <div
+        class="px-[5vw] py-12 flex md:flex-row flex-col items-stretch justify-between"
+      >
+        <div>
+          <img src="./Img/f-logo.png" class="h-10" alt="" />
+          <h4 class="font-semibold mt-5">Dudaji, Inc © All Rights Reserved.</h4>
+          <div class="flex justify-start items-baseline gap-2">
+            <div class="size-2 rounded-[2px] bg-[#122670]"></div>
+            <p class="text-[#666] mt-3">
+              135, Hai Ba Trung str, Ben Nghe ward, district 1, HCMC.
+            </p>
+          </div>
+          <div class="flex justify-start items-baseline gap-2">
+            <div class="size-2 rounded-[2px] bg-[#ff9792]"></div>
+            <p class="text-[#666] mt-1">contact@dudaji.vn</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-between items-start md:items-end mt-12"
+        >
+          <ul class="flex gap-3 items-center flex-wrap">
+            <li>
+              <a
+                href="#about"
+                class="font-semibold hover:text-[#122670] active:text-[#031532]"
+                ><p>About us</p></a
+              >
+            </li>
+            <li>
+              <div class="size-2 bg-[#122670] rounded-full"></div>
+            </li>
+            <li>
+              <a
+                href="#product"
+                class="font-semibold hover:text-[#122670] active:text-[#031532]"
+                ><p>Products</p></a
+              >
+            </li>
+            <li>
+              <div class="size-2 bg-[#122670] rounded-full"></div>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="font-semibold hover:text-[#122670] active:text-[#031532]"
+                ><p>Contact</p></a
+              >
+            </li>
+            <li>
+              <div class="size-2 bg-[#122670] rounded-full"></div>
+            </li>
+            <li>
+              <a
+                href="https://fringe-salsa-849.notion.site/Dudaji-VN-Published-56bb001012814cb1aad472841a79dd3d?pvs=74"
+                target="_blank"
+                class="font-semibold hover:text-[#122670] active:text-[#031532]"
+                ><p>Blog</p></a
+              >
+            </li>
+            <li>
+              <div class="size-2 bg-[#122670] rounded-full"></div>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-semibold hover:text-[#122670] active:text-[#031532]"
+                ><p>Recruit</p></a
+              >
+            </li>
+          </ul>
+          <div class="flex gap-8 mt-12 md:mt-0">
+            <a
+              href="https://www.facebook.com/profile.php?id=61555142122783"
+              target="_blank"
+              class="border-b-[#FF9792] border-b-4 pb-1"
+              ><i
+                data-lucide="facebook"
+                fill="#122670"
+                class="size-8 text-[#122670]"
+              ></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/dudaji-vietnam/"
+              target="_blank"
+              class="border-b-[#FF9792] border-b-4 pb-1"
+              ><i
+                data-lucide="linkedin"
+                fill="#122670"
+                class="size-8 text-[#122670]"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="https://unpkg.com/lucide@latest"></script>
-		<script>
-			lucide.createIcons();
-			AOS.init({});
-			window.addEventListener('DOMContentLoaded', () => {
-				document.body.classList.remove('opacity-0');
-				jumpToSection();
-			});
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+      AOS.init({});
+      window.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.remove("opacity-0");
+        jumpToSection();
+      });
 
-			function jumpToSection() {
-				document.querySelectorAll('a[href*="#"]').forEach((a) => {
-					a.addEventListener('click', (e) => {
-						e.preventDefault();
-						var target = document.querySelector(
-							a.getAttribute('href'),
-						);
-						window.scrollTo({
-							top:
-								target.offsetTop -
-								(window.innerWidth < 765 ? 88 : 80),
-							behavior: 'smooth',
-						});
-					});
-				});
-			}
+      function jumpToSection() {
+        document.querySelectorAll('a[href*="#"]').forEach((a) => {
+          a.addEventListener("click", (e) => {
+            e.preventDefault();
+            var target = document.querySelector(a.getAttribute("href"));
+            window.scrollTo({
+              top: target.offsetTop - (window.innerWidth < 765 ? 88 : 80),
+              behavior: "smooth",
+            });
+          });
+        });
+      }
 
-			(function () {
-				let navimenus = document.querySelectorAll('.navi-menu');
-				let mobileNav = document.querySelector('.mobile-nav');
-				let overlayMask = document.querySelector('.overlayMask');
+      (function () {
+        let navimenus = document.querySelectorAll(".navi-menu");
+        let mobileNav = document.querySelector(".mobile-nav");
+        let overlayMask = document.querySelector(".overlayMask");
 
-				navimenus.forEach((menu) => {
-					menu.addEventListener('click', () => {
-						mobileNav.classList.toggle('hide');
-						document.body.classList.toggle('overflow-y-hidden');
-						overlayMask.classList.toggle('hidden');
-					});
-				});
-			})();
+        navimenus.forEach((menu) => {
+          menu.addEventListener("click", () => {
+            mobileNav.classList.toggle("hide");
+            document.body.classList.toggle("overflow-y-hidden");
+            overlayMask.classList.toggle("hidden");
+          });
+        });
+      })();
 
-			(function () {
-				let header = document.querySelector('.header');
-				let scrolldown = document.querySelector('.scroll-down');
-				window.addEventListener('scroll', (e) => {
-					if (window.scrollY > 10) {
-						header.classList.add('bg-[#122670]');
-						scrolldown.classList.add('opacity-0');
-					} else {
-						header.classList.remove('bg-[#122670]');
-						scrolldown.classList.remove('opacity-0');
-					}
-					// activeScroll();
-				});
-			})();
+      (function () {
+        let header = document.querySelector(".header");
+        let scrolldown = document.querySelector(".scroll-down");
+        window.addEventListener("scroll", (e) => {
+          if (window.scrollY > 10) {
+            header.classList.add("bg-[#122670]");
+            scrolldown.classList.add("opacity-0");
+          } else {
+            header.classList.remove("bg-[#122670]");
+            scrolldown.classList.remove("opacity-0");
+          }
+          // activeScroll();
+        });
+      })();
 
-			const typedTextSpan = document.querySelector('.typed-text');
-			const cursorSpan = document.querySelector('.cursor');
+      const typedTextSpan = document.querySelector(".typed-text");
+      const cursorSpan = document.querySelector(".cursor");
 
-			const textArray = ['Communication experiences.'];
-			const typingDelay = 200;
-			const erasingDelay = 100;
-			const newTextDelay = 2000; // Delay between current and next text
-			let textArrayIndex = 0;
-			let charIndex = 0;
+      const textArray = ["Communication experiences."];
+      const typingDelay = 200;
+      const erasingDelay = 100;
+      const newTextDelay = 2000; // Delay between current and next text
+      let textArrayIndex = 0;
+      let charIndex = 0;
 
-			function type() {
-				if (charIndex < textArray[textArrayIndex].length) {
-					if (!cursorSpan.classList.contains('typing'))
-						cursorSpan.classList.add('typing');
-					typedTextSpan.textContent +=
-						textArray[textArrayIndex].charAt(charIndex);
-					charIndex++;
-					setTimeout(type, typingDelay);
-				} else {
-					cursorSpan.classList.remove('typing');
-					setTimeout(erase, newTextDelay);
-				}
-			}
+      function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+          if (!cursorSpan.classList.contains("typing"))
+            cursorSpan.classList.add("typing");
+          typedTextSpan.textContent +=
+            textArray[textArrayIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, typingDelay);
+        } else {
+          cursorSpan.classList.remove("typing");
+          setTimeout(erase, newTextDelay);
+        }
+      }
 
-			function erase() {
-				if (charIndex > 0) {
-					if (!cursorSpan.classList.contains('typing'))
-						cursorSpan.classList.add('typing');
-					typedTextSpan.textContent = textArray[
-						textArrayIndex
-					].substring(0, charIndex - 1);
-					charIndex--;
-					setTimeout(erase, erasingDelay);
-				} else {
-					cursorSpan.classList.remove('typing');
-					textArrayIndex++;
-					if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-					setTimeout(type, typingDelay + 1100);
-				}
-			}
+      function erase() {
+        if (charIndex > 0) {
+          if (!cursorSpan.classList.contains("typing"))
+            cursorSpan.classList.add("typing");
+          typedTextSpan.textContent = textArray[textArrayIndex].substring(
+            0,
+            charIndex - 1
+          );
+          charIndex--;
+          setTimeout(erase, erasingDelay);
+        } else {
+          cursorSpan.classList.remove("typing");
+          textArrayIndex++;
+          if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+          setTimeout(type, typingDelay + 1100);
+        }
+      }
 
-			document.addEventListener('DOMContentLoaded', function () {
-				// On DOM Load initiate the effect
-				if (textArray.length) setTimeout(type, newTextDelay + 250);
-			});
+      document.addEventListener("DOMContentLoaded", function () {
+        // On DOM Load initiate the effect
+        if (textArray.length) setTimeout(type, newTextDelay + 250);
+      });
 
-		const GOOGLE_SHEET_SCRIPT_URL =
-				'https://script.google.com/macros/s/AKfycbyaaCk2T5X1VQVBZb6XLCh-CCXdap7TVOy2VYJ4qXZt7i00c5K8Wr3a4ufJkv_sJXnDBg/exec';
-			const formContact = document.forms['contactForm']
-			formContact.addEventListener('submit', (e) => {
-				e.preventDefault();
-				submitToGGform(formContact);
-			});
-			async function submitToGGform(formData) {
-				let respond = await fetch(GOOGLE_SHEET_SCRIPT_URL, {
-					method: 'POST',
-					body: new FormData(formData),
-				});
-				Toastify({
-					text: "Thank you for filling out the form, we will contact you soon.",
-					duration: 3000,
-					close: true,
-					gravity: "top", 
-					position: "center", 
-					stopOnFocus: true, 
-					style: {
-						background: "linear-gradient(to right, #00b09b, #96c93d)",
-					},
-					onClick: function () { } // Callback after click
-				}).showToast();
-				
-			}
-			
-		</script>
+      const GOOGLE_SHEET_SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbyaaCk2T5X1VQVBZb6XLCh-CCXdap7TVOy2VYJ4qXZt7i00c5K8Wr3a4ufJkv_sJXnDBg/exec";
+      const formContact = document.forms["contactForm"];
+      formContact.addEventListener("submit", (e) => {
+        e.preventDefault();
+        submitToGGform(formContact);
+      });
+      async function submitToGGform(formData) {
+        let respond = await fetch(GOOGLE_SHEET_SCRIPT_URL, {
+          method: "POST",
+          body: new FormData(formData),
+        });
+        Toastify({
+          text: "Thank you for filling out the form, we will contact you soon.",
+          duration: 3000,
+          close: true,
+          gravity: "top",
+          position: "center",
+          stopOnFocus: true,
+          style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+          },
+          onClick: function () {}, // Callback after click
+        }).showToast();
+      }
+    </script>
 
-		<!-- <script src="https://test.middo.app/chat-widget.js"></script>
+    <script src="https://test.middo.app/chat-widget.js"></script>
     <script>
       window.onload = function () {
         ChatWidget.init(
-          `https://test.middo.app/help-desk/65fb9b2c0420b04e531df4f1`,
-          "lemon"
+          `https://test.middo.app/help-desk/66348ad623376373f6dec986`,
+          "default"
         );
       };
-    </script> -->
+    </script>
 
-		<script>
-			var image = document.getElementsByClassName('thumbnail');
-			new simpleParallax(image, {
-				overflow: true,
-				transition: 'ease-in-out',
-				maxTransition: 100,
-			});
-		</script>
+    <script>
+      var image = document.getElementsByClassName("thumbnail");
+      new simpleParallax(image, {
+        overflow: true,
+        transition: "ease-in-out",
+        maxTransition: 100,
+      });
+    </script>
 
-		<script>
-			window.addEventListener('scroll', function () {
-				var navItems = document.querySelectorAll('.page-section');
-				// get id in href of navItems like item href="#about" has #
-				const sectionIds = Array.from(navItems).map((navItem) => {
-					const href = navItem.getAttribute('href');
-					if (href.includes('#')) {
-						return href.slice(1);
-					}
-				});
+    <script>
+      window.addEventListener("scroll", function () {
+        var navItems = document.querySelectorAll(".page-section");
+        // get id in href of navItems like item href="#about" has #
+        const sectionIds = Array.from(navItems).map((navItem) => {
+          const href = navItem.getAttribute("href");
+          if (href.includes("#")) {
+            return href.slice(1);
+          }
+        });
 
-				let sections = sectionIds.map((id) => {
-					return document.getElementById(id);
-				});
+        let sections = sectionIds.map((id) => {
+          return document.getElementById(id);
+        });
 
-				// remove null value in sections
-				sections = sections.filter((section) => section !== null);
+        // remove null value in sections
+        sections = sections.filter((section) => section !== null);
 
-				var scrollPosition = window.scrollY + 80;
+        var scrollPosition = window.scrollY + 80;
 
-				sections.forEach(function (current) {
-					var top = current.offsetTop;
-					var bottom = top + current.offsetHeight;
-					console.log(top, bottom, scrollPosition);
+        sections.forEach(function (current) {
+          var top = current.offsetTop;
+          var bottom = top + current.offsetHeight;
+          console.log(top, bottom, scrollPosition);
 
-					if (scrollPosition >= top && scrollPosition < bottom) {
-						const id = current.getAttribute('id');
+          if (scrollPosition >= top && scrollPosition < bottom) {
+            const id = current.getAttribute("id");
 
-						const navItem = document.querySelector(
-							`a[href="#${id}"]`,
-						);
+            const navItem = document.querySelector(`a[href="#${id}"]`);
 
-						navItem.classList.add('active');
-					} else {
-						const id = current.getAttribute('id');
-						const navItem = document.querySelector(
-							`a[href="#${id}"]`,
-						);
+            navItem.classList.add("active");
+          } else {
+            const id = current.getAttribute("id");
+            const navItem = document.querySelector(`a[href="#${id}"]`);
 
-						navItem.classList.remove('active');
-					}
-				});
-			});
-		</script>
-	</body>
+            navItem.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
