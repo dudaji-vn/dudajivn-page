@@ -796,7 +796,13 @@
 				</div>
 			</div>
 		</footer>
-
+		<script src="https://middo.app/chat-widget.js">
+		</script>
+		<script>
+			window.onload = function () {
+				ChatWidget.init(`https://middo.app/help-desk/66e40f8f54995f1e13a3e179`, 'violet');
+			};
+		</script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="https://unpkg.com/lucide@latest"></script>
 		<script>
@@ -928,14 +934,9 @@
 			
 		</script>
 
-    <script src="https://test.middo.app/chat-widget.js"></script>
-    <script>
-      window.onload = function () {
-        ChatWidget.init(
-          `https://test.middo.app/help-desk/66348ad623376373f6dec986`,
-          "default"
-        );
-      };
+
+
+  
     </script>
 
 		<script>
